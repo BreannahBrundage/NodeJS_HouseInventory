@@ -20,7 +20,57 @@
 		
 		<!-- Content -->
 		<div class="container">
-			<h1>House Inventory System</h1>
+			<h1 class="text-center">House Inventory System</h1>
+
+			<br>
+
+			<!-- Search Bar -->
+			 <div>
+				<label>Search:</label>
+				<input type="text" placeholder="Enter item name">
+				<button class="btn btn-primary">Search</button>
+			 </div>
+
+			 <br>
+
+			 <!-- Add Buttons -->
+			  <div class="text-center">
+				<a href="/add-item" class="btn btn-primary">Add Item</a>
+				<a href="/add-location" class="btn btn-primary">Add Location</a>
+			  </div>
+
+			  <br> 
+
+			  <!-- Locations and Items -->
+			   <div class="row">
+
+				<!-- Location Box -->
+				 <div class="col-md-6">
+					<h3>Locations</h3>
+					<div class="border p-3" style="height: 250px;">
+						<p>No locations added yet</p>
+					</div>
+				 </div>
+
+				 <!-- Items Box -->
+				  <div class="col-md-6">
+					<h3>Items</h3>
+					<div class="border p-3" style="height: 250px;">
+						<p>No items added yet</p>
+				  </div>
+			   </div>
+            </div>
+			   <br>
+
+			   <!-- Botton Page Buttons -->
+				<div class="row">
+					<div class="col text-center">
+						<button class="btn btn-primary">View Item</button>
+					    <button class="btn btn-primary">Edit Item</button>
+					    <button class="btn btn-primary">Remove Item</button>
+					</div>
+				</div>
+			
 		</div>
 
 		<!-- Bootstrap core JavaScript -->
