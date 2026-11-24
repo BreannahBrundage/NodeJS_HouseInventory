@@ -12,6 +12,11 @@ app.get('/', function(req, res) {
     res.render('page/index');
 });
 
+// display Add Location page
+app.get('/add-location', function(req, res) {
+    res.render('page/add-location');
+});
+
 //start the web app
 app.listen(8080, function () {
 	console.log('App listening on port 8080!');
