@@ -17,6 +17,11 @@ app.get('/add-location', function(req, res) {
     res.render('page/add-location');
 });
 
+// display Add Item page
+app.get('/add-item', function(req, res) {
+    res.render('page/add-item');
+});
+
 //start the web app
 app.listen(8080, function () {
 	console.log('App listening on port 8080!');
