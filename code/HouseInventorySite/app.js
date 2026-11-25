@@ -22,6 +22,12 @@ app.get('/add-item', function(req, res) {
     res.render('page/add-item');
 });
 
+// display View Item page
+app.get('/view-item', function(req, res) {
+    res.render('page/view-item');
+});
+
+
 //start the web app
 app.listen(8080, function () {
 	console.log('App listening on port 8080!');
