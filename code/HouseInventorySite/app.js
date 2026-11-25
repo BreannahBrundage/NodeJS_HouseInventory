@@ -27,6 +27,10 @@ app.get('/view-item', function(req, res) {
     res.render('page/view-item');
 });
 
+// display Edit Item page
+app.get('/edit-item', function(req, res) {
+    res.render('page/edit-item');
+});
 
 //start the web app
 app.listen(8080, function () {
