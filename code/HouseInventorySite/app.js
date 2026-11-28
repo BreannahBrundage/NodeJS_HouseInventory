@@ -1,6 +1,7 @@
 //setup express to handle routing and rendering
 var express = require('express');
 var app = express();
+var locations = [];
 app.set('view engine', 'ejs');
 
 //setup bodyparser to extra data from form posts
@@ -9,12 +10,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // route to index page
 app.get('/', function(req, res) {
-    res.render('page/index');
+    res.render('page/index', { locations: locations});
 });
 
 // display Add Location page
 app.get('/add-location', function(req, res) {
     res.render('page/add-location');
+});
+
+// add a new location
+app.post('/add-location', function(req, res) {
+    var location = req.body.location;
+    if (location && location.trim() !== '') {
+        locations.push(location.trim());
+    }
+    res.redirect('/');
 });
 
 // display Add Item page
